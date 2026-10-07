@@ -1,0 +1,93 @@
+{
+  "root": {
+    "results": [
+      {
+        "id": "_901_1",
+        "parentId": "_900_1",
+        "contentHandler": "resource/x-bb-file",
+        "title": "Fake syllabus file",
+        "visibility": "VISIBLE",
+        "state": "Started",
+        "renderType": "REG",
+        "contentDetail": {
+          "resource/x-bb-file": {}
+        }
+      },
+      {
+        "id": "_902_1",
+        "parentId": "_900_1",
+        "contentHandler": "resource/x-bb-folder",
+        "title": "Fake folder",
+        "visibility": "VISIBLE",
+        "state": "Started",
+        "renderType": "REG",
+        "contentDetail": {
+          "resource/x-bb-folder": {}
+        }
+      },
+      {
+        "id": "_903_1",
+        "parentId": "_900_1",
+        "contentHandler": "resource/x-bb-bltiplacement-ie_zoom_fake",
+        "title": "Fake other tool",
+        "visibility": "VISIBLE",
+        "state": "Started",
+        "renderType": "REG",
+        "contentDetail": {
+          "resource/x-bb-bltiplacement-ie_zoom_fake": {}
+        }
+      }
+    ],
+    "paging": {
+      "limit": 100,
+      "previousPage": "",
+      "nextPage": "",
+      "count": 3,
+      "offset": 0
+    }
+  },
+  "folder": {
+    "results": [
+      {
+        "id": "_911_1",
+        "parentId": "_902_1",
+        "contentHandler": "resource/x-bb-bltiplacement-ie_forums_course_tool",
+        "title": "IE Forums",
+        "visibility": "VISIBLE",
+        "state": "Started",
+        "renderType": "REG",
+        "contentDetail": {
+          "resource/x-bb-bltiplacement-ie_forums_course_tool": {}
+        }
+      }
+    ],
+    "paging": {
+      "limit": 100,
+      "previousPage": "",
+      "nextPage": "",
+      "count": 1,
+      "offset": 0
+    }
+  },
+  "detail": {
+    "id": "_911_1",
+    "parentId": "_902_1",
+    "contentHandler": "resource/x-bb-bltiplacement-ie_forums_course_tool",
+    "title": "IE Forums",
+    "visibility": "VISIBLE",
+    "state": "Started",
+    "renderType": "REG",
+    "contentDetail": {
+      "resource/x-bb-bltiplacement-ie_forums_course_tool": {
+        "placementHandle": "ie_forums_course_tool",
+        "launchLink": "/webapps/blackboard/execute/blti/launchPlacement?blti_placement_id=_777_1&content_id=_911_1&course_id=_100_1&wrapped=true",
+        "placement": {
+          "id": "_777_1",
+          "handle": "ie_forums_course_tool",
+          "url": "https://ie-lti-forums.ie.edu/app"
+        },
+        "existsPlacement": true
+      }
+    }
+  }
+}

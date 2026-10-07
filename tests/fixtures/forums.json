@@ -1,0 +1,127 @@
+{
+  "data": [
+    {
+      "id": 11763,
+      "externalCourseKey": "FAKE-EXT-COURSE-001",
+      "title": "SESSION 2. Recap of Session 1 · open until Friday 9 October",
+      "description": "<p>Welcome to the first forum. The forums are where the concepts from the live session become yours: you use them on a case, and you argue with each other about them. Nothing new is introduced here; if a word in a question is unfamiliar, it is in today's slides.</p><p></p><p><strong>How the week works.</strong> Post your answers the sooner the better, if you can; the best debates need time. Reply to at least two classmates with a challenge, an extension or a request for evidence: \"I agree\" is not a reply.</p><p><strong>What is assessed.</strong> Quality and insight, not volume: a post that connects a concept to a real example and a constraint beats three posts that restate the slides.</p><p><strong>AI tools.</strong> Encouraged for drafting and structuring; declare them with the sentence from the syllabus at the end of your post, or state that none were used.</p><p>I will also post some additonal optional themes during the week, that you can also react after you finish with the questions.</p>",
+      "creationDate": 1791143602508,
+      "creator": "I00000001",
+      "visibility": "VISIBLE",
+      "startDate": null,
+      "endDate": null,
+      "courseGroups": "",
+      "gradeable": false,
+      "allowSubscription": false,
+      "allowLikes": false,
+      "allowAuthorDeleteOwnPosts": false,
+      "allowAuthorEditOwnPosts": false,
+      "allowMembersCreateNewThreads": false,
+      "allowFileAttachments": false,
+      "allowUsersReplyWithQuota": false,
+      "maxPosts": 0,
+      "maxCharactersForPost": 0,
+      "status": "OK",
+      "permissions": [
+        "ALLOW_SEE_THREADS",
+        "ALLOW_UNSUBSCRIPTION_TO_FORUM"
+      ],
+      "ltiThreads": [
+        {
+          "id": 47440,
+          "idForum": 11763,
+          "title": "1. Why models never reach production",
+          "description": "<p>Choose a real or hypothetical company and explain, in a short post (200–300 words), three reasons its ML models might never reach production. For each reason, say which persona is best positioned to address it, and why that persona and not another.</p>",
+          "creationDate": 1791143652649,
+          "creator": "I00000001",
+          "visibility": "VISIBLE",
+          "startDate": null,
+          "endDate": null,
+          "readOnly": false,
+          "status": "OK",
+          "permissions": [
+            "ALLOW_MARK_ALL_THREAD_POSTS"
+          ],
+          "ltiPosts": [],
+          "totalPosts": 38,
+          "totalUnreaded": 0,
+          "numMessagesOfUser": 0,
+          "numMessagesAllowed": 0
+        },
+        {
+          "id": 47441,
+          "idForum": 11763,
+          "title": "2. A responsibility map",
+          "description": "<p>Draft a one-page RACI-style map for a fictional recommendation-model project (an online retailer, a streaming service, a bank's \"next best offer\": your choice). Use a table like the one presented in the session. Rows are the lifecycle stages; columns are Data Scientist, ML Engineer, IT/DevOps, Product Owner and Risk/Compliance. Only one <em>A</em> per row. Add three lines explaining the two allocations you found hardest.</p>",
+          "creationDate": 1791143691415,
+          "creator": "I00000001",
+          "visibility": "VISIBLE",
+          "startDate": null,
+          "endDate": null,
+          "readOnly": false,
+          "status": "OK",
+          "permissions": [
+            "ALLOW_MARK_ALL_THREAD_POSTS"
+          ],
+          "ltiPosts": [],
+          "totalPosts": 27,
+          "totalUnreaded": 0,
+          "numMessagesOfUser": 0,
+          "numMessagesAllowed": 0
+        },
+        {
+          "id": 47442,
+          "idForum": 11763,
+          "title": "3. Training vs operationalising",
+          "description": "<p>In your own words (no quotes from the slides), define the difference between \"training a model\" and \"operationalising a model\", and give one concrete business consequence of confusing the two. It is more relevant if you know about a real example from your own experience. Otherwise, try to identify a scenario where this might happen</p>",
+          "creationDate": 1791143723753,
+          "creator": "I00000001",
+          "visibility": "VISIBLE",
+          "startDate": null,
+          "endDate": null,
+          "readOnly": false,
+          "status": "OK",
+          "permissions": [
+            "ALLOW_MARK_ALL_THREAD_POSTS"
+          ],
+          "ltiPosts": [],
+          "totalPosts": 13,
+          "totalUnreaded": 4,
+          "numMessagesOfUser": 0,
+          "numMessagesAllowed": 0
+        },
+        {
+          "id": 47443,
+          "idForum": 11763,
+          "title": "Theme A. The three model company",
+          "description": "<p>This was polled in chat during the live session (AGREE/DISAGREE, one line each). Is MLOps proportionate for a company with three models? What would be the threshold of the <em>minimum viable</em> MLOps?</p>",
+          "creationDate": 1791144120958,
+          "creator": "I00000001",
+          "visibility": "VISIBLE",
+          "startDate": null,
+          "endDate": null,
+          "readOnly": false,
+          "status": "OK",
+          "permissions": [
+            "ALLOW_MARK_ALL_THREAD_POSTS"
+          ],
+          "ltiPosts": [],
+          "totalPosts": 3,
+          "totalUnreaded": 3,
+          "numMessagesOfUser": 0,
+          "numMessagesAllowed": 0
+        }
+      ],
+      "isUserSubscribed": false,
+      "isFavorite": false,
+      "hasUnreadedMessages": true,
+      "totalPosts": 81,
+      "totalUnreaded": 7
+    }
+  ],
+  "permissions": [
+    "ALLOW_SEE_FORUMS"
+  ],
+  "currentUser": "A00000001",
+  "currentRole": "ContextLearner"
+}

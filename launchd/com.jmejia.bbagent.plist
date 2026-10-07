@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.jmejia.bbagent</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/jmejia/development/ie-university/blackboard-forum-agent</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/jmejia/.pyenv/versions/3.14.4/bin/uv</string>
+        <string>run</string>
+        <string>bbagent</string>
+        <string>collect</string>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/Users/jmejia/.pyenv/versions/3.14.4/bin:/usr/bin:/bin</string>
+    </dict>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>7</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>StandardOutPath</key>
+    <string>/Users/jmejia/development/ie-university/blackboard-forum-agent/data/logs/collect.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/jmejia/development/ie-university/blackboard-forum-agent/data/logs/collect.err.log</string>
+</dict>
+</plist>

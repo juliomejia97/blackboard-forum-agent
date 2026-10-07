@@ -1,0 +1,11 @@
+profile/
+data/
+out/
+*.har
+!tests/fixtures/sample.har
+config.yaml
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.claude/settings.local.json

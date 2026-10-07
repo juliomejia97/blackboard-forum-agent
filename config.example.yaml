@@ -1,0 +1,15 @@
+base_url: https://blackboard.ie.edu
+profile_dir: profile
+data_dir: data
+out_dir: out
+courses:
+  - bb_course_id: _00000_1
+    name: Example Course
+    notion_course_url: https://www.notion.so/<course-page-id>
+    min_replies: 2
+    reply_scope: forum
+    min_reply_words: 30
+    # Sentence from the syllabus. Must contain <model> exactly once; the drafter skill replaces it
+    # with the name of the model that drafted the text.
+    ai_declaration: "I used <model> to draft this post and reviewed the final text."
+    # forum_launch_url: /webapps/blackboard/execute/blti/launchPlacement?...  # only if auto-detection fails

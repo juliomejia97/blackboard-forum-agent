@@ -1,0 +1,36 @@
+[project]
+name = "bbagent"
+version = "0.1.0"
+description = "Daily Blackboard forum monitor and draft-support agent"
+readme = "README.md"
+authors = [
+    { name = "juliomejia97", email = "julio.mejia0697@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "playwright>=1.63.0",
+    "pydantic>=2",
+    "pyyaml>=6.0.3",
+]
+
+[project.scripts]
+bbagent = "bbagent.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
