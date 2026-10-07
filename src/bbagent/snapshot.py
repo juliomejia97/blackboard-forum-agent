@@ -205,7 +205,7 @@ def _course_entry(now: datetime, result: CourseResult) -> dict:
 def build_snapshot(
     now: datetime, course_results: list[CourseResult], session_expired: bool = False
 ) -> dict:
-    """Snapshot consumed by the drafter; documented in docs/snapshot.md."""
+    """Snapshot consumed by the drafter; documented in .claude/skills/forum-drafter/snapshot.md."""
     return {
         "schema_version": SCHEMA_VERSION,
         "generated_at": now.isoformat(),

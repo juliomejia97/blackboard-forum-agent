@@ -27,8 +27,7 @@ uv run bbagent capture   # like login, recording data/capture.har; prints /learn
 `collect` exit codes: 0 ok, 1 no courses configured, 2 session expired (run `login`; a snapshot with
 `session_expired: true` is written), 3 endpoint or schema change (no snapshot written). Codes 2 and
 3 raise a macOS notification. Only GET requests are sent (`publish --send` is the single exception). The forums launch URL is derived from the
-course content tree; if that fails, set `forum_launch_url` on the course in `config.yaml`
-(see `docs/endpoints.md`).
+course content tree; if that fails, set `forum_launch_url` on the course in `config.yaml`.
 
 `publish` is a dry run unless `--send` is given: it prints course, forum and thread titles, the parent
 author and excerpt, the final text, word count and the JSON payload, after checking against a fresh
@@ -50,30 +49,8 @@ Publishing is a separate, explicitly approved step (`bbagent publish`).
 Add your own experiences to `.claude/skills/forum-drafter/profile.md`; drafts only use facts listed
 there or in the session notes. The skill loads the `writer` skill before drafting.
 
-## Scheduling (launchd)
-
-`launchd/com.jmejia.bbagent.plist` runs `bbagent collect` daily at 07:00 (logs in `data/logs/`).
-
-```sh
-cp launchd/com.jmejia.bbagent.plist ~/Library/LaunchAgents/
-launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.jmejia.bbagent.plist
-launchctl kickstart gui/$(id -u)/com.jmejia.bbagent   # optional: run now
-```
-
-Uninstall:
-
-```sh
-launchctl bootout gui/$(id -u)/com.jmejia.bbagent
-rm ~/Library/LaunchAgents/com.jmejia.bbagent.plist
-```
-
-`collect` refuses to run (exit 1) while `config.yaml` still has the example placeholders
-(`_00000_1`, `<course-page-id>`).
-
 ## Tests
 
 ```sh
 uv run ruff format . && uv run ruff check . && uv run pytest -q
 ```
-
-Design: `docs/superpowers/specs/2026-10-06-blackboard-forum-agent-design.md`.

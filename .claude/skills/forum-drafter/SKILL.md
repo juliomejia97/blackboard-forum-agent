@@ -7,7 +7,7 @@ description: Use when the user (or the scheduled task) asks to draft Blackboard 
 
 Reads `out/*.json` from the bbagent collector and the matching class notes in Notion, and presents drafts in chat. Notion is the source of truth: Julio reviews and approves each item in chat, and only approved text is written to the session page. Posting to Blackboard happens only through `bbagent publish` (step 4.4), one item at a time, after Julio's explicit approval of that item. Never delete Notion content.
 
-Project: `/Users/jmejia/development/ie-university/blackboard-forum-agent`. Snapshot schema: `docs/snapshot.md` in that project.
+Project: `/Users/jmejia/development/ie-university/blackboard-forum-agent`. Snapshot schema: `snapshot.md` in this skill's directory.
 
 ## Rules
 
