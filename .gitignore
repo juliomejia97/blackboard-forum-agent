@@ -11,3 +11,4 @@ __pycache__/
 .claude/settings.local.json
 docs/
 launchd/
+.claude/skills/forum-drafter/profile.md

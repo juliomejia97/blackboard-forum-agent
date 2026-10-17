@@ -41,13 +41,14 @@ then collects that course only (other courses stay in the day's snapshot).
 
 ## Forum drafter (Claude skill)
 
-The skill lives at `.claude/skills/forum-drafter` in the project (`SKILL.md`, `profile.md`). A daily scheduled task
+The skill lives at `.claude/skills/forum-drafter` in the project (`SKILL.md`, `profile.example.md`). A daily scheduled task
 runs it after `collect`: it reads the latest `out/*.json`, reads the course session notes in Notion
 (Notion MCP connector), and writes drafts to a `Foro – <forum title>` page under each session page.
 Publishing is a separate, explicitly approved step (`bbagent publish`).
 
-Add your own experiences to `.claude/skills/forum-drafter/profile.md`; drafts only use facts listed
-there or in the session notes. The skill loads the `writer` skill before drafting.
+Optional: copy `.claude/skills/forum-drafter/profile.example.md` to `profile.md` (gitignored) and add your
+experiences; drafts only use facts listed there or in the session notes. Without it, drafts leave
+bracketed placeholders for personal examples. The skill uses a `writer` skill if one is available.
 
 ## Tests
 
