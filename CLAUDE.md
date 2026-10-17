@@ -10,6 +10,9 @@
 uv sync && uv run playwright install chromium     # setup
 uv run ruff format . && uv run ruff check . && uv run pytest -q   # format, lint, test
 uv run pytest tests/test_rules.py::test_name -q   # single test
+uv run bbagent login                              # headed Chromium on profile/ for SSO/MFA
+uv run bbagent courses [--all] [--term TEXT]      # list course ids to fill config.yaml
+uv run bbagent capture                            # like login, records data/capture.har
 uv run bbagent collect [--headed]                 # needs a logged-in profile/ (run `bbagent login` first)
 uv run bbagent status                             # latest out/*.json, no network
 uv run bbagent publish --course _N_1 --thread ID [--parent ID] --text-file post.md   # dry run; add --send to POST
@@ -42,7 +45,7 @@ Rules that span several modules:
 - Snapshot `threads` holds only non-`done` threads; `record` holds all threads of forums open or closed at most 7 days ago.
 - A `session_expired` snapshot never replaces a good snapshot of the same day; a schema error writes nothing.
 
-Exit codes are part of the contract with schedulers and the drafter skill: `collect` 0 ok, 1 no or placeholder config, 2 session expired, 3 endpoint/schema change; `publish` adds 4 for refused by checks. `publish --send` makes exactly one POST and never retries.
+Exit codes are part of the contract with schedulers and the drafter skill: `collect` 0 ok, 1 no or placeholder config, 2 session expired, 3 endpoint/schema change; `publish` adds 4 for refused by checks. `publish --send` makes exactly one POST and never retries, verifies creator and parent in the response, then re-collects that course only. Before sending (and in dry run) it refuses if the thread is not in the course, the text is already posted by you, the message limit is reached, `--parent` is missing or yours, or the text contains a `<model>` or `[...]` placeholder.
 
 ## Local data
 
